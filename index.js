@@ -11,12 +11,12 @@ const Message = require('./model/Message');
 
 const server = http.createServer(app)
 const io = new Server(server, 
-//     {
-//     cors: {
-//         origin: 'http://localhost:3000',
-//         methods: ['GET', 'POST']
-//     }
-// }
+    {
+    cors: {
+        origin: 'https://651335765ff2ba083bde4268--quiet-taffy-89d436.netlify.app/',
+        methods: ['GET', 'POST']
+    }
+}
 );
 
 
