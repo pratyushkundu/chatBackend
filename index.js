@@ -13,7 +13,7 @@ const server = http.createServer(app)
 const io = new Server(server, 
     {
     cors: {
-        origin: 'https://65133b7ff1e8a90befc31656--silly-puppy-a8688a.netlify.app/',
+        origin: 'https://65133b7ff1e8a90befc31656--silly-puppy-a8688a.netlify.app',
         methods: ['GET', 'POST']
     }
 }
