@@ -4,14 +4,14 @@ const http = require('http');
 const cors = require('cors');
 const { Server } = require('socket.io')
 require('./db');
-// app.use(cors());
+app.use(cors());
 
 const PORT = process.env.PORT || 8000;
 const Message = require('./model/Message');
 
 const server = http.createServer(app)
-const io = new Server(server,
-//      {
+const io = new Server(server, 
+//     {
 //     cors: {
 //         origin: 'http://localhost:3000',
 //         methods: ['GET', 'POST']
